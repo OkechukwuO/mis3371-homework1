@@ -40,24 +40,34 @@ window.onload = showDate;
 
 <!----Form section--->
 <form>
+
 <table border="1">
 
+    <!-- Patient Name Section -->
     <tr>
-        <td>First Name:</td>
-        <td></td>
+        <td colspan="3">
+            Patient's Name (First, MI, Last):
+        </td>
     </tr>
 
+    <!-- PATIENT NAME INPUTS -->
     <tr>
-        <td>Middle Initial:</td>
-        <td></td>
-    </tr>
+        <td>
+            <input type="text" maxlength="30" placeholder="First Name">
+        </td>
 
-    <tr>
-        <td>Last Name:</td>
-        <td></td>
+        <td>
+            <input type="text" maxlength="1" placeholder="MI">
+        </td>
+
+        <td>
+            <input type="text" maxlength="30" placeholder="Last Name">
+        </td>
     </tr>
 
 </table>
+    
 </form>
+    
 </body>
 </html>
