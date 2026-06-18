@@ -14,21 +14,31 @@ Description: Patient registration form for Hummingbird Medical.
 </head>
 <body>
 
-<div>
+<!-- BANNER -->
+<div class="banner">
+
     <img src="hbmediclogo.png" alt="Hummingbird Medical Logo" width="120">
 
-    <h1>Hummingbird Medical</h1>
+    <div>
+        <h1>Hummingbird Medical</h1>
+        <h2>Patient Registration Form</h2>
 
-    <h2>Patient Registration Form</h2>
+        <p id="today"></p>
+    </div>
 
-    <p id="today"></p>
 </div>
 
 <script>
-    //display todays date in the banner 
+//Display current date in the banner section
+function showDate() 
+    {
     document.getElementById("today").innerHTML =
         "Today is: " + new Date().toDateString();
+    }
+window.onload = showDate;
 </script>
+
+<p>This page will contain a patient registration form.</p>
     
 </body>
 </html>
